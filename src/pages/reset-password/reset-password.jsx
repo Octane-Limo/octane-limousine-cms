@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./reset-password.css";
 import BIG_LOGO_IMG from "../../assets/new-logo.png";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  forgotPassword,
+  // forgotPassword,
   resetPassword,
   verifyResetToken,
 } from "../../redux/auth/authAction";
 
 const ResetPassword = () => {
   const { token } = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const dispatch = useDispatch();
   const { loading, tokenValid, message, error } = useSelector((s) => s.auth);
   console.log(tokenValid);
