@@ -97,7 +97,7 @@ export const forgotPassword = (email) => async (dispatch) => {
   try {
     dispatch({ type: T.FORGOT_PASSWORD_REQUEST });
     const res = await fetch(
-      `https://octane-limousine-backend.vercel.app/api/auth/forgot-password`,
+      `https://octane-limousine-backend-lovat.vercel.app/api/auth/forgot-password`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -120,7 +120,7 @@ export const verifyResetToken = (token) => async (dispatch) => {
   try {
     dispatch({ type: T.VERIFY_TOKEN_REQUEST });
     const res = await fetch(
-      `https://octane-limousine-backend.vercel.app/api/auth/reset-password/${encodeURIComponent(
+      `https://octane-limousine-backend-lovat.vercel.app/api/auth/reset-password/${encodeURIComponent(
         token
       )}`,
       { method: "GET", credentials: "include" }
@@ -136,7 +136,7 @@ export const resetPassword = (token, password) => async (dispatch) => {
   try {
     dispatch({ type: T.RESET_PASSWORD_REQUEST });
     const res = await fetch(
-      `https://octane-limousine-backend.vercel.app/api/auth/reset-password/${encodeURIComponent(
+      `https://octane-limousine-backend-lovat.vercel.app/api/auth/reset-password/${encodeURIComponent(
         token
       )}`,
       {

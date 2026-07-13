@@ -3,7 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
-  baseURL: "https://octane-limousine-backend.vercel.app",
+  baseURL: "https://octane-limousine-backend-lovat.vercel.app",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
