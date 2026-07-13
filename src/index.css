@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.home-sec3 {
+  
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+}
+
+input[type="file"] {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type="file"]:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+  }
+
+  input[type="file"]:hover {
+    background-color: #f1f1f1;
+  }
+
+  input[type="file"]:disabled {
+    background-color: #e0e0e0;
+    border-color: #ddd;
+    cursor: not-allowed;
+  }
+
+  
+textarea {
+  width: 100% !important;
+  margin: 10px 0px;
+}
+
+/* HomeSec1 css start */
+/* Scrollable nav buttons */
+.nav-scroll {
+  scrollbar-width: thin;
+}
+.nav-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.nav-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Thumbnail preview wrapper */
+.thumb-wrap {
+  background: #f8f9fa;
+}
+.thumb-wrap img.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Subtle card highlight */
+.card.border-info {
+  border-width: 2px !important;
+}
+
+/* Smooth scrollbars for nav strips */
+.nav-scroll { scrollbar-width: thin; }
+.nav-scroll::-webkit-scrollbar { height: 6px; }
+.nav-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.2);
+  border-radius: 10px;
+}
+
+/* Previews */
+.thumb-wrap { background: #f8f9fa; }
+.thumb-wrap .object-cover { width: 100%; height: 100%; object-fit: cover; }
+
+/* Drag & drop zones */
+.dropzone {
+  transition: border-color .15s ease, background-color .15s ease, box-shadow .15s ease;
+  border-style: dashed !important;
+  border-color: #dee2e6 !important;
+}
+.dropzone .form-text { margin-top: .25rem; }
+
+.dropzone.drop-over {
+  background-color: #f0f9ff;
+  border-color: #0d6efd !important; /* Bootstrap primary */
+  box-shadow: 0 0 0 .2rem rgba(13,110,253,.15);
+}
+
+/* Subtle emphasis on active car card */
+.border-info-subtle { border-color: rgba(13,110,253,.25) !important; }
+.shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important; }
+
+/* HomeSec1 css end */
+
+/* HomeSec2 css start */
+/* Logo list grid */
+.logo-list {
+  gap: 1rem;
+}
+
+/* Logo card styling */
+.logo-item {
+  border: 1px solid #e9ecef;
+  border-radius: .75rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.logo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.1);
+}
+
+/* Logo images fit nicely */
+.logo-image {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #000000;
+}
+.object-contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* HomeSec2 css end */
+
+/* HomeSec3 css start */
+/* Inputs in header */
+.header-input {
+  max-width: 680px;
+}
+.subheader-input {
+  max-width: 560px;
+}
+
+/* Description area */
+.desc-textarea {
+  width: 80%;
+  max-width: 800px;
+  min-height: 110px;
+}
+
+/* Icon images fit nicely */
+.icon-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.object-contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* Card polish */
+.icon-item {
+  border: 1px solid #e9ecef;
+  border-radius: .75rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.icon-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.08);
+}
+
+/* Tighter spacing on small screens */
+@media (max-width: 576px) {
+  .desc-textarea { width: 100%; }
+}
+
+/* HomeSec3 css end */
+
+/* HomeSec4 css start */
+/* Media fit helpers */
+.object-cover { width: 100%; height: 100%; object-fit: cover; }
+.object-contain { width: 100%; height: 100%; object-fit: contain; }
+
+/* Icon card polish */
+.icon-item {
+  border: 1px solid #e9ecef;
+  border-radius: .75rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.icon-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.08);
+}
+
+/* HomeSec4 css end */
+
+/* HomeSec5 css start */
+.home-sec5 .car-thumb {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: #f8f9fa;
+}
+
+.home-sec5 .car-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* HomeSec5 css end */
+
+.header-dropdown .pages-ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.header-dropdown .pages-ul li a {
+    text-decoration: none;
+    color: #ffdfb1;
+    font-size: 18px;
+}
+

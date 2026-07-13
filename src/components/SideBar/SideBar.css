@@ -1,0 +1,47 @@
+.sidebar-sec {
+  padding: 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  height: 100%;
+}
+
+.sidebar-sec .accordion-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-sec .accordion-body ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-sec .accordion-body ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar-sec .accordion-button {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.sidebar-sec .accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.sidebar-sec .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 0 !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.sidebar-sec .booked-details {
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar-sec .booked-details:hover {
+  color: #a76810;
+}

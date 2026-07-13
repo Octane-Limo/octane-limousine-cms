@@ -1,0 +1,27 @@
+.header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.header .header-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-dropdown ul {
+  padding: 0;
+}
+
+.header .header-dropdown ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header-dropdown #navbarDropdown {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
