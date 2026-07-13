@@ -56,7 +56,7 @@ const Header = () => {
 
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="#user"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"

@@ -1,6 +1,5 @@
 import * as T from "./authType";
 import axiosInstance from "../../axiosInstance";
-import axios from "axios";
 import Cookies from "js-cookie";
 
 const handleJson = async (res) => {
