@@ -56,7 +56,7 @@ const HomeSec2 = ({ data }) => {
         if (file) {
           // Only update logos that have changed
           const result = await handleLogoUpdate(file, i); // Update logo at index i
-          // console.log("Logo updated:", result);
+          console.log("Logo updated:", result);
         }
       }
 

@@ -12,18 +12,18 @@ const handleJson = async (res) => {
   return data;
 };
 
-const getMsg = (err) => {
-  if (axios.isAxiosError(err)) {
-    const d = err.response?.data;
-    return (
-      d?.message ||
-      d?.error ||
-      err.response?.statusText ||
-      `Login failed (${err.response?.status ?? "network"})`
-    );
-  }
-  return err?.message || "Login failed";
-};
+// const getMsg = (err) => {
+//   if (axios.isAxiosError(err)) {
+//     const d = err.response?.data;
+//     return (
+//       d?.message ||
+//       d?.error ||
+//       err.response?.statusText ||
+//       `Login failed (${err.response?.status ?? "network"})`
+//     );
+//   }
+//   return err?.message || "Login failed";
+// };
 
 export const loginUser = (credentials, navigateAfterLogin) => async (dispatch) => {
   dispatch({ type: T.AUTH_LOGIN_LOADING });
